@@ -1,0 +1,43 @@
+/* =================== footer =================== */
+.footer{
+  background: #333530;
+  &__top{
+    display: flex; justify-content: space-between; 
+    height: 95px; display: flex; align-items: center;
+    border-bottom: 2px solid #8d8d8d;
+    .logo{
+      img{
+        width: 156px;
+      }
+    }
+    .menu{
+      display: flex;
+      li{
+        a{
+          display: inline-block;
+          font-size: 18px; color: #f7fbf1; font-weight: 300; opacity: 0.5;
+          &:hover{
+            color: #fff; opacity: 0.8; font-weight: 400;
+          }
+        }
+        + li {
+          margin-left: 80px;
+        }
+      }
+    }
+  }
+  &__mid{
+    padding: 30px 0;
+    address{
+      font-size: 400px; opacity: 0.7; font-size: 16px; color: #959595;
+      text-align: right;
+    }
+  }
+
+  &-bot{
+      background: #22251e;
+      height: 55px; text-align: center; line-height: 55px;
+      font-size: 18px; color: #5e5e5e; font-weight: 400;
+  }
+}
+

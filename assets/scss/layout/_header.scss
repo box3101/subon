@@ -1,0 +1,65 @@
+/* =================== header =================== */
+.header {
+  &__top {
+    height: 50px;
+    background: url(../img/bg-header-top.png)no-repeat;
+    background-size: cover;
+    .inner{
+      height: 100%;
+    }
+    .util {
+      display: flex;
+      height: 100%;
+      justify-content: flex-end;
+      li{
+        padding: 0 20px;
+        &:last-of-type{padding-right: 0;}
+        &:last-of-type a:after{display: none;}
+        a{
+          position: relative;
+          display: inline-flex; align-items: center;
+          align-items: center;
+          width: 100%; height: 100%;
+          font-size: 14px; color: #fff;
+          @include make-after{
+            @extend %make-bar;
+          };
+        }
+      }
+    }
+  }
+
+  &__inner{
+    .inner{
+      height:86px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .logo{
+      display: flex; align-items: center;
+      img{
+        width: 150px; object-fit: cover;
+      }
+    }
+    #gnb{
+      display: flex;
+      li + li{
+        padding-left: 40px;
+      }
+      li{
+        a{
+          align-items: center;
+          display: inline-flex; height: 100%;
+          font-size: 18px; font-weight: 500;
+          @extend %effect-2;
+          &:hover{
+            color: $m-color;
+            font-weight: 600;
+            @extend %hover-effect-2;
+          }
+        }
+      }
+    }
+  }
+ 
+}

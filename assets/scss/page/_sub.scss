@@ -1,0 +1,157 @@
+/* =================== sub-banner =================== */
+.sub-banner{
+  width: 100%; height: 280px;
+  
+  //banner
+  $banner-types : (type1, type2 , type3, type4, type5, type6);
+  @each $banner-type in $banner-types{
+    &.#{$banner-type}{
+      background: url(../img/banner-#{$banner-type}.png);
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  .inner{
+    height: 100%;
+    display: flex; align-items: center;
+    padding-left: 120px;
+  }
+
+  &__tit{
+    display: block;
+    @extend %txt-shadow;
+    font-size: 36px; font-weight: 800; margin-bottom: 10px; 
+  }
+  &__txt{
+    font-size: 14px; color: #578f3b; font-weight: 500;
+  }
+}
+
+/* =================== location =================== */
+.location{
+  height: 66px;
+  border-bottom: 1px solid #ebebeb;
+  .inner{
+    height: 100%;
+    ul{
+      height: 100%;
+      display: flex;
+      li{
+        position: relative;
+        border: 1px solid #e2e3e3; border-bottom: none;
+        margin-top: -1px; margin-left: -1px;
+        display: flex;
+        align-items: center;
+        justify-content: center; min-width: 80px;
+        a{
+          display: inline-block;
+        }
+        +li{
+          flex:0 0 200px; box-sizing: border-box;
+          a i{
+            display: inline-block; margin-left: 77px!important;
+          }
+        }
+        &.is-active{
+           a{
+            display: inline-block;
+            i{
+              transform: rotate(180deg);
+            }
+          }
+        }
+      }
+    }
+
+    .site_panel{
+      display: none;
+      position: absolute; top: 66px; left: 0; right: 0;
+      &.is-active{display: block;}
+      .site_panel_box{
+        a{
+          position: relative; z-index: 10;
+          background: #fff; box-sizing: border-box;
+          display: block;
+          padding: 10px 0; border:1px solid #e2e3e3; box-sizing: border-box;
+          margin-top: -1px;
+          padding-left: 25px;
+          &:first-of-type{margin-top: 0;}
+          &:hover{
+            @extend %link-hover; color: $m-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* =================== sub-tit =================== */
+.sub-tit{
+  padding-top: 40px; 
+  text-align: center;
+  &__desc{
+    font-size: 18px; color: #a5c544; font-weight: bold; margin-bottom: 10px;
+  }
+  &__txt{
+    font-size: 48px; color: #000; font-weight: bold;
+    line-height: 1;
+  }
+}
+
+/* =================== section2 =================== */
+.section2{
+  &.bg{
+   background: #f6f9f0; 
+  }
+  padding: 50px 0;
+  &__had{
+    margin-bottom: 20px;
+    p{
+      position: relative;
+      font-size: 24px; font-weight: bold; padding-left: 40px;
+      @include make-after{
+        position: absolute; left: 0; top: 50%; transform: translateY(-50%);
+        width: 25px; height: 20px;
+        @include bg-url("img","bg-sub-had.png");
+      }
+    }
+  }
+  &__body{
+    img{
+      width: 100%;
+    }
+
+    .list{
+      gap: 50px;
+      li{
+        flex: 1 0 calc(33.3% - 50px);
+        .img{
+          img{
+            width: 100%;
+          }
+        }
+        .txt{
+          margin-top: 20px;
+          font-size: 18px; text-align: center; 
+        }
+      }
+    }
+  }
+}
+
+/* =================== layout1 =================== */
+.layout1{
+  padding: 40px 80px;
+  border: 1px solid #e6f0da; box-sizing: border-box; border-radius: 5px;
+  .flex{
+    width: 100%; align-items: stretch;
+    .img{
+    }
+    .bar{
+      display: block;
+      width: 1px;  background: #d5dbc4;
+      margin: 0 67px;
+    }
+  }
+}
