@@ -209,6 +209,12 @@ html.ie .scroll-custom { scrollbar-arrow-color: color(main); scrollbar-face-colo
 
 .promotion .inner .ref { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
 
+.promotion .inner .ref .flex { width: 100%; }
+
+.promotion .inner .ref .flex a { display: inline-block; width: 100%; }
+
+.promotion .inner .ref img { width: 100%; }
+
 /* =================== clinic-service =================== */
 .clinic-service { background-image: url("../img/bg-clinic-service.png"); background-position: center; background-size: cover; background-repeat: no-repeat; }
 
@@ -339,7 +345,6 @@ html.ie .scroll-custom { scrollbar-arrow-color: color(main); scrollbar-face-colo
 
 @media (max-width: 900px) { html { font-size: 13px; }
   .layout1 .flex .img { -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; }
-  .header__top { display: none !important; }
   .header__inner #gnb { display: none !important; } }
 
 @media (max-width: 600px) { html { font-size: 12px; }
@@ -811,15 +816,15 @@ a[data-fancybox="gallery"] img { width: 100%; }
 /* =================== 모바일 메뉴 =================== */
 nav { /* Just a quick hamburger */ /*  Transform all the slices of hamburger into a crossmark. */ /* But let's hide the middle one. */ /* Ohyeah and the last one should go the other direction */ /* Make this absolute positioned at the top left of the screen */ /* And let's slide it in from the left */ }
 
-nav #menuToggle { display: none; position: absolute; top: 25px; right: 10px; z-index: 1; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+nav #menuToggle { display: none; position: absolute; top: 5.2rem; right: 10px; z-index: 1; }
 
 nav #menuToggle a { text-decoration: none; color: #232323; -webkit-transition: color 0.3s ease; transition: color 0.3s ease; }
 
 nav #menuToggle a:hover { color: tomato; }
 
-nav #menuToggle input { display: block; width: 40px; height: 32px; position: absolute; top: -7px; left: -5px; cursor: pointer; opacity: 0; /* hide this */ z-index: 2; /* and place it over the hamburger */ -webkit-touch-callout: none; }
+nav #menuToggle input { display: block; width: 40px; height: 32px; position: absolute; top: -7px; left: -5px; cursor: pointer; opacity: 0; /* hide this */ z-index: 2; /* and place it over the hamburger */ }
 
-nav #menuToggle span { display: block; width: 33px; height: 4px; margin-bottom: 5px; position: relative; background: #333; border-radius: 3px; z-index: 1; -webkit-transform-origin: 4px 0px; transform-origin: 4px 0px; -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+nav #menuToggle span { display: block; width: 25px; height: 2px; margin-bottom: 5px; position: relative; background: #333; border-radius: 3px; z-index: 1; -webkit-transform-origin: 2px 0px; transform-origin: 2px 0px; -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
 
 nav #menuToggle span:first-child { -webkit-transform-origin: 0% 0%; transform-origin: 0% 0%; }
 
@@ -831,7 +836,7 @@ nav #menuToggle input:checked ~ span:nth-last-child(3) { opacity: 0; -webkit-tra
 
 nav #menuToggle input:checked ~ span:nth-last-child(2) { -webkit-transform: rotate(-45deg) translate(0, -1px); transform: rotate(-45deg) translate(0, -1px); }
 
-nav #menu { position: fixed; left: 0; top: 0; right: 0; height: 80%; background: #ededed; list-style-type: none; -webkit-font-smoothing: antialiased; /* to stop flickering of text in safari */ -webkit-transform-origin: 0% 0%; transform-origin: 0% 0%; -webkit-transform: translate(-100%, 0); transform: translate(-100%, 0); -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+nav #menu { position: fixed; left: 0; top: 0; right: 0; height: 100%; background: #ededed; list-style-type: none; -webkit-font-smoothing: antialiased; /* to stop flickering of text in safari */ -webkit-transform-origin: 0% 0%; transform-origin: 0% 0%; -webkit-transform: translate(-100%, 0); transform: translate(-100%, 0); -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
 
 nav #menu li { padding: 10px 0; font-size: 22px; }
 

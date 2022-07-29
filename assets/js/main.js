@@ -9,16 +9,23 @@ $(function () {
 
   //DOM 초기화
   function initDOM() {
-    let speed;
   }
 
   //이벤트 바인딩
   function bindingEvent() {
-    slide();
-    goTop();
+    wow();
     htmlInclude();
-    subPanel()
+    goTop();
+    slide();
+    subPanel();
   }
+
+
+  // wow.js
+  function wow(){
+    new WOW().init();
+  }
+
 
   //html include
   function htmlInclude() {

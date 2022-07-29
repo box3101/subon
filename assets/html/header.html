@@ -64,24 +64,37 @@
       <span></span>
       <span></span>
       <ul id="menu">
-        <a href="#">
-          <li>Home</li>
-        </a>
-        <a href="#">
-          <li>About</li>
-        </a>
-        <a href="#">
-          <li>Info</li>
-        </a>
-        <a href="#">
-          <li>Contact</li>
-        </a>
-        <a href="https://erikterwan.com/" target="_blank">
-          <li>Show me more</li>
-        </a>
+        <li>
+          <a href="회사소개.html">회사소개</a>
+        </li>
+        <li>
+          <a href="서비스소개.html">서비스소개와 이용사례</a>
+        </li>
+        <li>
+          <a href="프리미엄서미스.html">회원프리미엄서비스</a>
+        </li>
+        <li>
+          <a href="이용후기.html">이용후기</a>
+        </li>
+        <li>
+          <a href="문의.html">문의</a>
+        </li>
+        <li>
+          <a href="케어매니저지원.html">케어매니저지원</a>
+        </li>
       </ul>
     </div>
   </nav>
 
 </header>
 <!-- //header -->
+
+<script>
+    
+  $(function () {
+    $("#menuToggle").on("click", function () {
+      $("body, html").css({"overflow-y":"hidden"});
+    });
+  });
+
+</script>
