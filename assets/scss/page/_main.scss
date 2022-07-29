@@ -2,52 +2,52 @@
 
 /* =================== common =================== */
 .com-sub-tit{
-  font:400 16px/1 'GmarketSans'; letter-spacing: -1px;
+  font:400 1rem/1 'GmarketSans'; letter-spacing: -0.0625rem;
   color: $s-color;
-  margin-bottom: 25px;
+  margin-bottom: 1.5625rem;
 }
 .com-tit{
-  font:bold 36px/1 'GmarketSans';
-  margin-bottom: 10px;
+  font:bold 2.25rem/1 'GmarketSans';
+  margin-bottom: 0.625rem;
   span{
     font-weight: 400;
   }
 }
 .com-txt{
-  font-weight: 500; font-size: 18px;
+  font-weight: 500; font-size: 1.125rem;
 }
 .more-btn{
   display: inline-block;
   img{
-    width: 65px; height: 65px;
+    width: 4.0625rem; height: 4.0625rem;
   }
 }
 .txt-shadow{
-  font-weight: 800; font-size: 18px; color: #000;
+  font-weight: 800; font-size: 1.125rem; color: #000;
   position: relative; z-index: 1;
   @include make-before{
     position: absolute; 
-    left: 0; width: 100%; height: 50%; top: 15px;
-    background: #d2e3a5; border-radius: 10px;
+    left: 0; width: 100%; height: 50%; top: 0.9375rem;
+    background: #d2e3a5; border-radius: 0.625rem;
     z-index: -1;
   }
 }
 .go-top {
-  display:block;position: fixed; /*bottom:283px; */bottom:40px;right:20px; z-index:99;width:44px;height:44px; transition: all 0.4s ease-in-out; opacity: 0;
+  display:block;position: fixed; /*bottom:17.6875rem; */bottom:2.5rem;right:1.25rem; z-index:99;width:2.75rem;height:2.75rem; transition: all 0.4s ease-in-out; opacity: 0;
   &.is-show{
     opacity: 1;
-    bottom: 20px;
+    bottom: 1.25rem;
   }
 }
-.go-top > a {display:block;overflow:hidden;width:44px; height:44px; display:block; background-color:$m-color;background-image:url(../img/arw-btn-go-top.png);background-repeat:no-repeat;background-position:50% 50%;border-radius:6px;background-size:14px 8px;}
-@media only screen and (max-width:1171px){
+.go-top > a {display:block;overflow:hidden;width:2.75rem; height:2.75rem; display:block; background-color:$m-color;background-image:url(../img/arw-btn-go-top.png);background-repeat:no-repeat;background-position:50% 50%;border-radius:0.375rem;background-size:0.875rem 0.5rem;}
+@media only screen and (max-width:73.1875rem){
   .go-top {/*bottom:59vh;*/bottom:4vw;right:4vw;}
 }
 
 /* =================== visual =================== */
 .visual{
   position: relative;
-  height: 670px;
+  height: 41.875rem;
   &-img{
     left: 0; right: 0; top: 0; bottom: 0;
     position: absolute;
@@ -57,16 +57,16 @@
   }
   .inner{
     position: relative; z-index: 10;
-    padding-left: 50px; padding-top:105px;
+    padding-left: 3.125rem; padding-top:6.5625rem;
   }
   .tit-txt{
-    margin-top: 35px;
-    font-size: 19px; font-weight: 500;
+    margin-top: 2.1875rem;
+    font-size: 1.1875rem; font-weight: 500;
   }
   .count-wrap{
-    width: 405px;
+    width: 25.3125rem;
     position: relative; z-index: 2;
-    margin-top: 35px;
+    margin-top: 2.1875rem;
     >*{
       display: inline-block;
     }
@@ -74,35 +74,35 @@
       cursor: pointer;
     }
     .visual-nav-wrap{
-      position: relative; top: 2px;
-      width: 75px;
+      position: relative; top: 0.125rem;
+      width: 4.6875rem;
       text-align: center;
       >*{display: inline-block;}
-      font-weight: 500; font-size: 16px;
+      font-weight: 500; font-size: 1rem;
       .num-current{
-        font-size: 26px; color: $m-color;
+        font-size: 1.625rem; color: $m-color;
       }
     }
     .progressbar{
-      margin-left: 27px;
+      margin-left: 1.6875rem;
     }
     .visual-stop{
-      margin-left: 10px;
+      margin-left: 0.625rem;
       cursor: pointer;
     }
     .visual-start{
       display: none;
-      margin-left: 10px;
-      cursor: pointer; position: relative; top: 3px;
+      margin-left: 0.625rem;
+      cursor: pointer; position: relative; top: 0.1875rem;
     }
   }
   .swiper-pagination-bullet{
-    width: 63px!important; height: 5px!important;
-    border-radius: 5px!important;
+    width: 3.9375rem!important; height: 0.3125rem!important;
+    border-radius: 0.3125rem!important;
     transition: all 0.4s ease-in-out;
   }
   .swiper-pagination-bullet + .swiper-pagination-bullet{
-    margin-left: 5px;
+    margin-left: 0.3125rem;
   }
   .swiper-pagination-bullet-active{
     background: $m-color!important;
@@ -112,13 +112,13 @@
 /* =================== service =================== */
 .service{
   display: flex;
-  margin-top: -170px;
+  margin-top: -10.625rem;
   position: relative; z-index: 2;
   .service__tit{
     position: relative;
-    top: 10px; left: -  10px;
+    top: 0.625rem; left: -  0.625rem;
     img{
-      width: 320px;
+      width: 20rem;
     }
   }
   &__list{
@@ -126,20 +126,20 @@
       @extend %box-shadow;
       transition: all 0.4s ease-in-out;
       &:hover{
-        box-shadow: 10px 16px 23.76px 0.24px rgba(16, 28, 8, 0.33);
+        box-shadow: 0.625rem 1rem 1.485rem 0.015rem rgba(16, 28, 8, 0.33);
         img{
           transform: rotateY(-180deg);
         }
       }
       a{
-        width: 100%; height: 140px;
+        width: 100%; height: 8.75rem;
         background: #fff;
         display: inline-flex;
         align-items: center; justify-content: center;
         .img{
-          width: 100px; height: 100px;
+          width: 6.25rem; height: 6.25rem;
           background: #f6f9f2; border-radius: 50%;
-          margin-right: 15px;
+          margin-right: 0.9375rem;
           position: relative;
           display: flex; align-items: center; justify-content: center;
           img{
@@ -148,7 +148,7 @@
           }
         }
         .txt{
-          font-size: 18px; font-weight: 400; text-align: center; color: #000;
+          font-size: 1.125rem; font-weight: 400; text-align: center; color: #000;
         }
         &:hover{
           background: $m-color;
@@ -168,7 +168,7 @@
 .promotion{
   @include bg-url("img","bg-service.png","cover");
   .inner{
-    padding: 100px 0;
+    padding: 6.25rem 0;
     .lef{
       flex:0 0 27.5%; /* 330/1200 */
     }
@@ -182,7 +182,7 @@
 .clinic-service{
   @include bg-url("img","bg-clinic-service.png","cover");
   .inner{
-    padding: 100px 0;
+    padding: 6.25rem 0;
     >*{
       flex:1;
     }
@@ -191,28 +191,28 @@
     }
     .ref{
       ul{
-        gap: 15px;
+        gap: 0.9375rem;
         li{
           position: relative;
-          flex:1 1 calc(33.3% - 15px);
-          height: 300px; background: #fff;
+          flex:1 1 calc(33.3% - 0.9375rem);
+          height: 18.75rem; background: #fff;
           @extend %box-shadow; 
-          padding: 25px 20px; box-sizing: border-box;
+          padding: 1.5625rem 1.25rem; box-sizing: border-box;
 
           @for $i from 1 through 6 {
             &:nth-of-type(#{$i}){
               @include make-after{
-                position: absolute; right: 20px; bottom: 25px;
-                width: 109px; height: 109px;
+                position: absolute; right: 1.25rem; bottom: 1.5625rem;
+                width: 6.8125rem; height: 6.8125rem;
                 @include bg-url('img',"clinic0#{$i}.png","cover");
               }
             }
           }
 
           .nums{
-            display: inline-block; margin-bottom: 10px;
-            width: 43px; height: 33px; border-radius: 10px;
-            font-size: 18px; line-height: 33px; letter-spacing: 0px;
+            display: inline-block; margin-bottom: 0.625rem;
+            width: 2.6875rem; height: 2.0625rem; border-radius: 0.625rem;
+            font-size: 1.125rem; line-height: 2.0625rem; letter-spacing: 0rem;
              color: #fff; text-align: center;
 
             $bg-colors : (
@@ -231,7 +231,7 @@
             }
           }
           .txt{
-            font-size: 24px; font-weight: 500; 
+            font-size: 1.5rem; font-weight: 500; 
           }
         }
       }
