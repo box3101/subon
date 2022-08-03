@@ -18,11 +18,12 @@ $(function () {
     goTop();
     slide();
     subPanel();
+    cdPopup();
   }
 
 
   // wow.js
-  function wow(){
+  function wow() {
     new WOW().init();
   }
 
@@ -78,6 +79,7 @@ $(function () {
       // visual-slide
       const visualSlide = new Swiper("#visual-slide", {
         effect: "fade",
+        // loop: true,
         speed: speed,
         autoplay: {
           delay: 2000,
@@ -133,27 +135,52 @@ $(function () {
   //sub panel
   function subPanel() {
     $(".location > .inner > ul > li").on("click", function () {
-  
+
       const $this = $(this);
       const sitePanel = $(".site_panel");
       const sitePanelValue = $(this).hasClass("is-active");
-  
-      if(!sitePanelValue){
+
+      if (!sitePanelValue) {
         active($this);
-      }else{
+      } else {
         thisClick($this);
       }
-  
+
       function active($this) {
         $this.addClass("is-active");
-        $this.find(".site_panel").stop(true,true).slideDown(400);
+        $this.find(".site_panel").stop(true, true).slideDown(200);
       }
-  
+
       function thisClick($this) {
         $this.removeClass("is-active");
-        $this.find(".site_panel").stop(true,true).slideUp(400);
+        $this.find(".site_panel").stop(true, true).slideUp(200);
       }
-  
+
+    });
+  }
+
+  // cd-popup
+  function cdPopup() {
+    jQuery(document).ready(function ($) {
+      //open popup
+      $('.cd-popup-trigger').on('click', function (event) {
+        event.preventDefault();
+        $('.cd-popup').addClass('is-visible');
+      });
+
+      //close popup
+      $('.cd-popup').on('click', function (event) {
+        if ($(event.target).is('.cd-popup-close') || $(event.target).is('.cd-popup') || $(event.target).is('.cd-close')) {
+          event.preventDefault();
+          $(this).removeClass('is-visible');
+        }
+      });
+      //close popup when clicking the esc keyboard button
+      $(document).keyup(function (event) {
+        if (event.which == '27') {
+          $('.cd-popup').removeClass('is-visible');
+        }
+      });
     });
   }
 

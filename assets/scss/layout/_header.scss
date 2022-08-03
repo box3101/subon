@@ -54,7 +54,7 @@
           font-size: 1.125rem; font-weight: 500;
           @extend %effect-2;
           &:hover{
-            color: $m-color;
+            color: $ms-color;
             font-weight: 600;
             @extend %hover-effect-2;
           }

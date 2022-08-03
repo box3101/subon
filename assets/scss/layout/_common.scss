@@ -63,17 +63,17 @@
     width: 100%;
     height: 100%;
     border-style: solid;
-    border-color: $m-color;
+    border-color: $ms-color;
     box-sizing: border-box;
   }
 
   &:before {
-    border-width: 5px 0 5px 0;
+    border-width: 2px 0 2px 0; box-sizing: border-box;
     transform: scaleX(0);
   }
 
   &:after {
-    border-width: 0 5px 0 5px;
+    border-width: 0 2px 0 2px; box-sizing: border-box;
     transform: scaleY(0);
   }
 }
@@ -95,7 +95,7 @@
     display: block;
     transition: 0.4s ease-in-out;
     height: 3px;
-    background: $m-color;
+    background: $ms-color;
     left: 0;
     bottom: 0;
     width: 0%;

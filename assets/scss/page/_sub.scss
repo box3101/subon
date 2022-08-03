@@ -23,6 +23,11 @@
     @extend %txt-shadow;
     font-size: 2.25rem; font-weight: 800; margin-bottom: 0.625rem; 
 
+    span{
+      color: #3c7d38;
+      -webkit-text-fill-color : #3c7d38;
+    }
+
     @media (max-width:$b-mo) {
       font-size: 1.6rem;
     }
@@ -108,7 +113,7 @@
 
 /* =================== sub-tit2 =================== */
 .sub-tit2{
-  font-size: 1.3125rem; font-weight: bold; color: $m-color; margin-top: 1.25rem;
+  font-size: 1.3125rem; font-weight: bold; color: $ms-color; margin-top: 1.25rem;
 }
 
 /* =================== section2 =================== */
@@ -129,8 +134,8 @@
       }
     }
     .txt{
-      margin-top: 20px;
-      font-size: 21px; color: #3c7d38;
+      margin-top: 1.25rem;
+      font-size: 1.3125rem; color: #3c7d38;
     }
 
   }
@@ -177,9 +182,10 @@
 .layout2{
   margin-top: 0.625rem; border: 0.0625rem solid #eaeaea;
   padding: 0 0.9375rem;
+  border-radius: 0.3125rem;
   li{
     padding:2.1875rem 0.9375rem;
-    display: flex; align-items: center;
+    display: flex; align-items: center; 
     +li{
       border-top: 0.0625rem solid #eaeaea;
     }
@@ -208,7 +214,31 @@
   }
 }
 
-/* =================== comtype01 =================== */
+
+/* =================== com-tab =================== */
+.com-tab{
+  ul{
+    display: flex; border-bottom: 0.125rem solid #333; margin-bottom: 3.125rem;
+    li{
+      width: 15rem; height: 3.4375rem;border: 0.0625rem solid #cfcfcf; box-sizing: border-box;
+      a{
+        display: inline-block; width: 100%; height: 100%;
+        background: #e8e8e8;color: #999;font-size: 1.125rem; text-align: center;
+        line-height: 3.4375rem; 
+      }
+      &.on{
+        border:0.0625rem solid #333;
+        a{
+          color: #333; font-weight: 500;  background: #fff;
+           border-bottom: none;
+          position: relative;  height: 104%;
+        }
+      }
+    }
+  }
+}
+
+/* =================== comtype =================== */
 .comtype01{
   opacity: 1;
   li{
@@ -270,19 +300,157 @@
   }
 }
 .comtype02{
-  padding: 60px 0; border: 1px solid #eaeaea; border-radius: 2px;
+  padding: 3.75rem 1.25rem; border: 0.0625rem solid #eaeaea; border-radius: 0.125rem;
+  &.all-center{
+    flex-direction: column;
+  }
   ul{
-    width: 60%;
+    width: 75%;
     text-align: center;
   }
   .img{
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     img{
-      width: 100px; height: 100px;
+      width: 6.25rem; height: 6.25rem;
     }
   }
   p{
-    font-size: 20px; line-height: 1.4;
+    font-size: 1.25rem; line-height: 1.4;
+  }
+  div.flex{
+    padding-top: 3.125rem; margin-top: 4.375rem; border-top: 0.0625rem solid #eaeaea;
+    .lef{
+      flex:0 0 9.375rem;
+      img{
+        width: 6.25rem; height: 6.25rem;
+      }
+    }
+    .ref{
+      flex:1;
+      font-size: 1.25rem; line-height: 1.5; word-break: keep-all;
+    }
+  }
+}
+.comtype03{
+  ul{
+    li{
+      position: relative;
+      padding: 1.5625rem 2.8125rem;  padding-right: 0.625rem;
+      flex:0 1 calc(50% - 0.9375rem);
+      display: flex; box-sizing: border-box; border: 0.0625rem solid #eaeaea; border-radius: 0.625rem;
+
+      @include make-before{
+        position: absolute; left: 0; width: 0.3125rem; height: 100%; top: 0; bottom: 0;
+        background: #a5c644; border-radius: 0.625rem 0 0 0.625rem;
+      }
+
+      .lef{
+        img{
+          display: inline-block; width: 6.25rem; height: 6.25rem;
+        }
+      }
+      .ref{
+        margin-left: 2.5rem;
+        dl{
+          display: flex; align-items: center;
+          margin-bottom: 0.3125rem;
+          dt{
+            display: inline-block;
+            flex:0 0 8.125rem; width: 8.125rem;  height: 1.875rem; line-height: 1.875rem; background: #a5c644;
+            color: #fff; text-align: center; font-size: 1.125rem; margin-right: 1.125rem; border-radius: 0.3125rem;
+          }
+          dd{
+            font-size: 1.125rem; word-break: keep-all;
+          }
+        }
+
+        &.w100{
+          width: 100%; padding-right: 1.875rem;
+          justify-content: space-between; align-items: center;
+          .btn{
+            background: #6fb214;
+          }
+        }
+      }
+    }
+  }
+}
+.comtype04{
+  li{
+    a{
+      display: block;
+      @extend %effect-1;
+
+      &:hover{
+        @extend %hover-effect-1;
+      }
+
+      .img{
+        img{
+          width: 100%; height: 15.625rem;
+        }
+      }
+      .txt-wrap{
+        background: #fff; padding-top: 0.75rem; padding-left: 1.125rem; padding-bottom: 1.875rem;
+        .tag{display: inline-block;
+          padding: 0.3125rem 0.625rem; border-radius: 1.25rem; background: #199e48;
+          color: #fff; font-size: 1.125rem; font-weight: bold;
+        }
+        .txt{
+          margin-top: 0.6875rem; font-weight: 500;
+          font-size: 1.125rem; 
+        }
+      }
+    }
+
+    &:nth-of-type(2){
+      .txt-wrap .tag{background: #00a0eb;}
+    }
+    &:nth-of-type(3){
+      .txt-wrap .tag{background: #185fe1;}
+    }
+    &:nth-of-type(4){
+      .txt-wrap .tag{background: #8d5fbc;}
+    }
+  }
+}
+.comtype05{
+  li{
+    border: 0.0625rem solid #eaeaea;  border-radius: 0.3125rem;
+    box-sizing: border-box; 
+    @extend %box-shadow;
+    a{
+      padding: 1.5625rem;
+      @extend %effect-1;
+
+      &:hover{
+        @extend %hover-effect-1;
+      }
+      display: inline-block;
+      .tag{
+        font-size: 1.0625rem; font-weight: bold; display: inline-block; padding: 0.3125rem 0.625rem; border-radius: 0.3125rem;
+        text-align: center; background: #8ab116; color: #fff;
+      }
+      .tit{
+        margin-top: 1.875rem; font-size: 1.3125rem; font-weight: bold; margin-bottom: 0.3125rem;
+      }
+      .txt{
+        margin-top: 0.625rem;
+        font-size: 1.0625rem; max-height: 6.25rem; overflow: hidden;
+      }
+      .date{
+        margin-top: 0.9375rem; font-size: 1.25rem; text-align: right;
+      }
+    }
+  }
+}
+.comtype06{
+  max-width: 600px; margin: 0 auto;
+}
+.com-bar{
+  position: relative; margin-right: 1.875rem;
+  @include make-after{
+    @extend %make-bar;
   }
 }
 
@@ -315,6 +483,12 @@
   .footer__top .menu{margin-top: 10px;margin-bottom: 10px;}
   .layout1 .flex .txt br{display: none;}
   .inner.p0{padding: 0;}
+  .layout2 li{padding-left: 0; padding-right: 0;}
+  .layout2 li .txt{word-break: keep-all;}
+  // .comtype04 li a .img img{object-fit: cover;}
+  .comtype02 ul{width: 100%;}
+  .comtype02.all-center li {margin-bottom: 10px;}
+  .comtype04 li a .img img {object-fit: cover; }
 }
 @media (max-width:$b-mo){
   html{

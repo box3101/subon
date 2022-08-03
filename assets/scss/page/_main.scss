@@ -39,7 +39,7 @@
     bottom: 1.25rem;
   }
 }
-.go-top > a {display:block;overflow:hidden;width:2.75rem; height:2.75rem; display:block; background-color:$m-color;background-image:url(../img/arw-btn-go-top.png);background-repeat:no-repeat;background-position:50% 50%;border-radius:0.375rem;background-size:0.875rem 0.5rem;}
+.go-top > a {display:block;overflow:hidden;width:2.75rem; height:2.75rem; display:block; background-color:$ms-color;background-image:url(../img/arw-btn-go-top.png);background-repeat:no-repeat;background-position:50% 50%;border-radius:0.375rem;background-size:0.875rem 0.5rem;}
 @media only screen and (max-width:73.1875rem){
   .go-top {/*bottom:59vh;*/bottom:4vw;right:4vw;}
 }
@@ -80,7 +80,7 @@
       >*{display: inline-block;}
       font-weight: 500; font-size: 1rem;
       .num-current{
-        font-size: 1.625rem; color: $m-color;
+        font-size: 1.625rem; color: $ms-color;
       }
     }
     .progressbar{
@@ -105,7 +105,7 @@
     margin-left: 0.3125rem;
   }
   .swiper-pagination-bullet-active{
-    background: $m-color!important;
+    background: $ms-color!important;
   }
 }
 
@@ -195,7 +195,7 @@ $service-colors-data : (
   .inner{
     padding:4.25rem 0;
     .lef{
-      flex:0 0 27.5%; /* 330/1200 */
+      flex:0 0 29.5%; /* 330/1200 */
     }
     .ref{
       flex:1;
