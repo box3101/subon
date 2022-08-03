@@ -1,17 +1,17 @@
 /* =================== BUTTON =================== */
-a.btn,button,input.btn{
+.btn,button,input.btn{
   display: inline-block;
   position: relative;
   top: 0;
   cursor: pointer;
   transition: 0.25s ease-in-out;
-  border-radius: 10px;
-  font: 500 16px/1 "Noto Sans KR";
+  border-radius: 0.625rem;
+  font: 500 1rem/1 "Noto Sans KR";
   box-sizing: border-box;
   color: #fff;
   &:hover,&.hover{ 
-    top: -5px;
-		// box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    top: -0.3125rem;
+		// box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.15);
   }
 }
 
@@ -37,27 +37,31 @@ $btn-colors: (
   .#{$key} {
     background-color: map-get($value, bg-color);
     color: map-get($value, color)!important;
-    border: 1px solid map-get($value, color);
+    border: 0.0625rem solid map-get($value, color);
   }
 }
 
 $btn-sizes: (
   size-xsm:(
-    padding: 5px,
-    size: 10px,
+    padding: 0.3125rem,
+    size: 0.625rem,
   ),
   size-sm: (
-    padding: 10px,
-    size : 12px,
+    padding: 0.625rem,
+    size : 0.75rem,
+  ),
+  size-mid: (
+    padding: 0.725rem 1.875rem,
+    size : 1.225rem,
   ),
   size-lg: (
-    padding:20px 60px,
-    size : 18px,
+    padding:1.25rem 3.75rem,
+    size : 1.125rem,
     font-w : 400,
   ),
   size-xlg: (
-    padding: 40px,
-    size:25px,
+    padding: 2.5rem,
+    size:1.5625rem,
   )
 );
 
@@ -71,13 +75,13 @@ $btn-sizes: (
 
 $btn-radius: (
   r-sm: (
-    radius: 5px,
+    radius: 0.3125rem,
   ),
   r-mid: (
-    radius: 20px,
+    radius: 1.25rem,
   ),
   r-lg: (
-    radius: 30px,
+    radius: 1.875rem,
   ),
 );
 
@@ -89,7 +93,7 @@ $btn-radius: (
 
 .btn.btn-outline {
   background: transparent;
-  border: .0625rem solid #5f8ee4;
+  border: 1px solid #5f8ee4;
   color: #333!important;
 }
 

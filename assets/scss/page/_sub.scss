@@ -22,6 +22,10 @@
     display: block;
     @extend %txt-shadow;
     font-size: 2.25rem; font-weight: 800; margin-bottom: 0.625rem; 
+
+    @media (max-width:$b-mo) {
+      font-size: 1.6rem;
+    }
   }
   &__txt{
     font-size: 0.875rem; color: #578f3b; font-weight: 500;
@@ -30,7 +34,7 @@
 
 /* =================== location =================== */
 .location{
-  height: 4.125rem;
+  height: 3.525rem;
   border-bottom: 0.0625rem solid #ebebeb;
   .inner{
     height: 100%;
@@ -45,12 +49,12 @@
         align-items: center;
         justify-content: center; min-width: 5rem;
         a{
-          display: inline-block;
+          display: inline-block; width: 100%; text-align: center;
         }
         +li{
           flex:0 0 12.5rem; box-sizing: border-box;
           a i{
-            display: inline-block; margin-left: 4.8125rem!important;
+            display: inline-block; margin-left: 0.8125rem !important
           }
         }
         &.is-active{
@@ -66,7 +70,7 @@
 
     .site_panel{
       display: none;
-      position: absolute; top: 4.125rem; left: 0; right: 0;
+      position: absolute; top: 3.5rem; left: 0; right: 0;
       &.is-active{display: block;}
       .site_panel_box{
         a{
@@ -75,7 +79,7 @@
           display: block;
           padding: 0.625rem 0; border:0.0625rem solid #e2e3e3; box-sizing: border-box;
           margin-top: -0.0625rem;
-          padding-left: 1.5625rem;
+          // padding-left: 1.5625rem;
           &:first-of-type{margin-top: 0;}
           &:hover{
             @extend %link-hover; color: $m-color;
@@ -96,7 +100,15 @@
   &__txt{
     font-size: 3rem; color: #000; font-weight: bold;
     line-height: 1;
+    @media (max-width:$b-web) {
+      font-size: 2rem;
+    }
   }
+}
+
+/* =================== sub-tit2 =================== */
+.sub-tit2{
+  font-size: 1.3125rem; font-weight: bold; color: $m-color; margin-top: 1.25rem;
 }
 
 /* =================== section2 =================== */
@@ -112,10 +124,15 @@
       font-size: 1.5rem; font-weight: bold; padding-left: 2.5rem;
       @include make-after{
         position: absolute; left: 0; top: 50%; transform: translateY(-50%);
-        width: 1.5625rem; height: 1.25rem;
+        width: 25px; height: 20px;
         @include bg-url("img","bg-sub-had.png");
       }
     }
+    .txt{
+      margin-top: 20px;
+      font-size: 21px; color: #3c7d38;
+    }
+
   }
   &__body{
     img{
@@ -156,6 +173,119 @@
   }
 }
 
+/* =================== layout2 =================== */
+.layout2{
+  margin-top: 0.625rem; border: 0.0625rem solid #eaeaea;
+  padding: 0 0.9375rem;
+  li{
+    padding:2.1875rem 0.9375rem;
+    display: flex; align-items: center;
+    +li{
+      border-top: 0.0625rem solid #eaeaea;
+    }
+    .img{
+      margin-right: 1.75rem;
+      img{
+        width: 6rem; height: 6rem;
+      }
+    }
+    .txt{
+      font-size: 1rem; color: #333333; font-weight: 500;
+      position: relative;
+      span{
+        position: relative;
+        @include make-before{
+          @extend %txt-shadow2;
+          height: 20%!important;
+        }
+      }
+    }
+  }
+  &.pd{
+    li{
+      padding: 0.9125rem 0;
+    }
+  }
+}
+
+/* =================== comtype01 =================== */
+.comtype01{
+  opacity: 1;
+  li{
+    position: relative;
+    opacity: 1;
+    @extend %box-shadow;
+    padding: 0.625rem 1.25rem; box-sizing: border-box;
+    height: 15.625rem;
+
+    @media (max-width:$b-web) {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+
+    &:nth-of-type(1){
+      @include make-after{
+        position: absolute;
+        width: 6.25rem; height: 6.25rem;
+        @include bg-url("img","sub02-04-1.png","cover");
+        bottom: 1.875rem; right: 1.25rem;
+      }
+    }
+    &:nth-of-type(2){
+      @include make-after{
+        position: absolute;
+        width: 6.25rem; height: 6.25rem;
+        @include bg-url("img","sub02-04-2.png","cover");
+        bottom: 1.875rem; right: 1.25rem;
+      }
+    }
+    &:nth-of-type(3){
+      @include make-after{
+        position: absolute;
+        width: 6.25rem; height: 6.25rem;
+        @include bg-url("img","sub02-04-3.png","cover");
+        bottom: 1.875rem; right: 1.25rem;
+      }
+    }
+
+    >span{
+      opacity: 1;
+      display: inline-block;
+      width: 2.1875rem;
+      height: 1.875rem;
+      background: #a9d35c;
+      color: #fff;
+      text-align: center;
+      border-radius: 0.625rem;
+      margin-bottom: 0.9375rem;
+    }
+    p{
+      margin-bottom: 0.625rem;
+      opacity: 1;
+      font-size: 1.125rem;
+      span{
+       font-weight: bold;
+      }
+    }
+  }
+}
+.comtype02{
+  padding: 60px 0; border: 1px solid #eaeaea; border-radius: 2px;
+  ul{
+    width: 60%;
+    text-align: center;
+  }
+  .img{
+    margin-bottom: 10px;
+    img{
+      width: 100px; height: 100px;
+    }
+  }
+  p{
+    font-size: 20px; line-height: 1.4;
+  }
+}
+
 
 @media (max-width:$b-web){
   html{
@@ -168,11 +298,6 @@
   }
   .layout1 .flex .img{align-self: center;}
   .header__inner #gnb{display: none!important;}
-}
-@media (max-width:$b-mo){
-  html{
-    font-size: 12px;
-  }
   .section2__body .list{gap:1rem;}
   .section2__body .list li{flex:1 1 100%!important;}
   .layout1{padding: 1.5rem 3rem;}
@@ -189,4 +314,10 @@
   .footer-bot{font-size: 1rem!important;}
   .footer__top .menu{margin-top: 10px;margin-bottom: 10px;}
   .layout1 .flex .txt br{display: none;}
+  .inner.p0{padding: 0;}
+}
+@media (max-width:$b-mo){
+  html{
+    font-size: 12px;
+  }
 }
