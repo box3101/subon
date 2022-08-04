@@ -16,9 +16,10 @@ $(function () {
     wow();
     htmlInclude();
     goTop();
-    slide();
+    slides();
     subPanel();
     cdPopup();
+    comTab();
   }
 
 
@@ -64,7 +65,7 @@ $(function () {
   }
 
   //EX
-  function slide() {
+  function slides() {
 
     speed = 1500;
     // visualSlider
@@ -181,6 +182,26 @@ $(function () {
           $('.cd-popup').removeClass('is-visible');
         }
       });
+    });
+  }
+
+  function comTab(){
+    const tabLi = $(".com-tab li");
+    const tabBox = $(".tab-box");
+
+    tabLi.on("click",function(e){
+      e.preventDefault();
+
+      const target = $(this).find('a').attr("href");
+
+      // tabmenu 클릭
+      tabLi.removeClass("on");
+      $(this).addClass('on');
+
+      // tab content 변경
+      tabBox.removeClass("on");
+      $(target).addClass("on");
+
     });
   }
 
