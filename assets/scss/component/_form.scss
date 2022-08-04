@@ -1,3 +1,20 @@
+/* =================== LIST-TABLE2 =================== */
+.list-table2{
+  border-top: 0.125rem solid #363636;
+  tr{
+    height: 3.875rem;
+    td,th{
+      font-size: 1.125rem; text-align: center;
+    }
+    th{
+      background: #f9f9f9;
+    }
+    td{
+      border-bottom: 0.0625rem solid #ebebeb;
+    }
+  }
+}
+
 /* =================== STAR-RATING =================== */
 fieldset{
   display: inline-block; border:0; display: none;
@@ -107,7 +124,7 @@ fieldset{
 } 
 .form-input,.form-select {
   width: 100%;
-  border: 1px solid #aaa;
+  border: 1px solid #c5c5c5; border-radius: 10px;
   height: 3.25rem;
   padding-left: 1rem;
   box-sizing: border-box;

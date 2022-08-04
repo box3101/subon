@@ -13,6 +13,26 @@
     top: -0.3125rem;
 		// box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.15);
   }
+  &.w100{
+    width: 100%;
+  }
+}
+
+.btn-kko{
+  width: 100%;  background: #ffeb00!important; color: #3c1e1e; font-weight: bold; font-size: 1.25rem; border: none!important; position: relative;
+  @include make-before{
+    position: absolute; left: 0.9375rem; top: 50%; transform: translateY(-50%);
+    width: 2.5rem; height: 2.5rem;
+    @include bg-url("img","bg-kakao.png");
+  }
+}
+.btn-naver{
+  width: 100%;  background: #27d34a!important; color: #fff; font-weight: bold; font-size: 1.25rem; border: none!important; position: relative;
+  @include make-before{
+    position: absolute; left: 0.9375rem; top: 50%; transform: translateY(-50%);
+    width: 2.5rem; height: 2.5rem;
+    @include bg-url("img","bg-naver.png");
+  }
 }
 
 $btn-colors: (
@@ -30,6 +50,11 @@ $btn-colors: (
   bg-yellow:(
     bg-color: $c-yellow,
     color:$c-black,
+  ),
+  bg-gray:(
+    bg-color : #f0f0f0,
+    color: #333,
+    border: #f0f0f0,
   )
 );
 
@@ -37,7 +62,7 @@ $btn-colors: (
   .#{$key} {
     background-color: map-get($value, bg-color);
     color: map-get($value, color)!important;
-    border: 0.0625rem solid map-get($value, color);
+    border: 0.0625rem solid map-get($value, border);
   }
 }
 
@@ -47,8 +72,8 @@ $btn-sizes: (
     size: 0.625rem,
   ),
   size-sm: (
-    padding: 0.625rem,
-    size : 0.75rem,
+    padding: 0.625rem 1.25rem,
+    size : 1rem,
   ),
   size-mid: (
     padding: 0.725rem 1.875rem,
@@ -74,6 +99,9 @@ $btn-sizes: (
 }
 
 $btn-radius: (
+  r-none:(
+    radius: 0px,
+  ),
   r-sm: (
     radius: 0.3125rem,
   ),

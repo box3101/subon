@@ -76,7 +76,7 @@
         <div class="inner">
           <div class="sub-banner__txt-wrap">
             <div class="sub-banner__tit">
-              로그인
+              마이페이지
             </div>
             <div class="sub-banner__txt">
               새로운 병원 이용 문화를 만들어 갑니다.
@@ -91,66 +91,60 @@
           Serve On
         </div>
         <div class="sub-tit__txt">
-          로그인
+          마이페이지
         </div>
       </div>
 
       <div class="section2">
         <div class="inner">
           <div class="section2__body">
-            <div class="login" style="max-width:600px;margin:0 auto">
-              <form action="">
-                <fieldset>로그인</fieldset>
-
-                <div class="form-group">
-                  <div class="form-group__row">
-                    <dl>
-                      <dt>이메일</dt>
-                      <dd>
-                        <input type="text" class="form-input">
-                      </dd>
-                    </dl>
-                  </div>
-                  <div class="form-group__row">
-                    <dl>
-                      <dt>패스워드</dt>
-                      <dd>
-                        <input type="password" class="form-input">
-                      </dd>
-                    </dl>
-                  </div>
-                </div>
-
-                <div class="btn-wrap mt20" style="text-align: center;">
-                  <button type="button" style="width: 100%; background-color: #8ab116;" class="btn bg-main size-lg">로그인</button>
-                </div>
-
-                <div class="mt10 flex flex-jc-bt">
-                  <div class="lef">
-                    <ul class="flex">
-                      <li class="com-bar">
-                        <a href="#">아이디 찾기</a>
-                      </li>
-                      <li>
-                        <a href="#">패스워드 찾기</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="ref">
-                    <a href="#">회원가입</a>
-                  </div>
-                </div>
-
-                <div class="btn-wrap mt50" style="text-align: center;">
-                  <button type="button" class="btn bg-main size-lg btn-kko">
-                    <strong>카카오 계정으로 로그인</strong></button>
-                  <button type="button" class="mt5 btn bg-main size-lg btn-naver">
-                    <strong>네이버 아이디로 로그인</strong></button>
-                </div>
-
-              </form>
+            <div class="com-tab">
+              <ul>
+                <li class="on">
+                  <a href="#">신청내역</a>
+                </li>
+                <li>
+                  <a href="#">취소내역</a>
+                </li>
+              </ul>
             </div>
 
+            <div class="tab-contents">
+              <div id="tab1">
+                <table class="list-table2">
+                  <colgroup>
+                    <col width="25%">
+                    <col width="50%">
+                    <col width="25%">
+                  </colgroup>
+                  <tr>
+                    <th>날짜</th>
+                    <th>신청내역</th>
+                    <th>비고</th>
+                  </tr>
+                  <tr>
+                    <td>2022-06-20</td>
+                    <td>동행서비스</td>
+                    <td>
+                      <div class="flex jc-center al-center gap5">
+                        <span>결제대기</span>
+                        <a href="#" class="btn size-sm bg-gray r-none">신청취소</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2022-06-20</td>
+                    <td>동행서비스</td>
+                    <td>
+                      <div class="flex jc-center al-center gap5">
+                        <span>결제완료</span>
+                        <a href="#" class="btn size-sm bg-default r-none">환불신청</a>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
       </div>
