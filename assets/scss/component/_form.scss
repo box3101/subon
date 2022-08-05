@@ -1,6 +1,6 @@
 /* =================== COM-TAB =================== */
-.tab-box{opacity: 0; height: 0; transition: all 0.4s ease-in-out;}
-.tab-box.on{opacity: 1; height: auto; }
+.tab-box{display: none; transition: all 0.4s ease-in-out;}
+.tab-box.on{display: block; }
 /* =================== LIST-TABLE2 =================== */
 .list-table2{
   border-top: 0.125rem solid #363636;

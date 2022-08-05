@@ -100,10 +100,10 @@
   padding-top: 2.5rem; 
   text-align: center;
   &__desc{
-    font-size: 1.125rem; color: #a5c544; font-weight: bold; margin-bottom: 0.625rem;
+    font-size: 1.125rem; color: #a5c544; font-weight: 500; margin-bottom: 0.625rem;
   }
   &__txt{
-    font-size: 3rem; color: #000; font-weight: bold;
+    font-size: 2.6rem; color: #000; font-weight: bold;
     line-height: 1;
     @media (max-width:$b-web) {
       font-size: 2rem;
@@ -458,9 +458,9 @@
   }
 }
 #login{
-  padding-bottom: 6.25rem;
+  padding-bottom: 7.25rem;
   .sub-tit{
-    padding-top: 6.25rem;
+    padding-top: 4.25rem;
   }
 }
 
@@ -475,7 +475,7 @@
   >.flex{
     >li{
       @extend %box-shadow;
-        width: 100%; padding: 1.25rem; box-sizing: border-box;
+        width: 100%; padding: 1.25rem; box-sizing: border-box; padding-top: 2.5rem;
         display: inline-block; text-align: center;
         .img{ margin-bottom: 1.5625rem;
           img{

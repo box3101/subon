@@ -356,9 +356,9 @@ html.ie .scroll-custom { scrollbar-arrow-color: color(main); scrollbar-face-colo
 /* =================== sub-tit =================== */
 .sub-tit { padding-top: 2.5rem; text-align: center; }
 
-.sub-tit__desc { font-size: 1.125rem; color: #a5c544; font-weight: bold; margin-bottom: 0.625rem; }
+.sub-tit__desc { font-size: 1.125rem; color: #a5c544; font-weight: 500; margin-bottom: 0.625rem; }
 
-.sub-tit__txt { font-size: 3rem; color: #000; font-weight: bold; line-height: 1; }
+.sub-tit__txt { font-size: 2.6rem; color: #000; font-weight: bold; line-height: 1; }
 
 @media (max-width: 1200px) { .sub-tit__txt { font-size: 2rem; } }
 
@@ -518,16 +518,16 @@ html.ie .scroll-custom { scrollbar-arrow-color: color(main); scrollbar-face-colo
 
 .com-bar:after { content: ""; display: block; }
 
-#login { padding-bottom: 6.25rem; }
+#login { padding-bottom: 7.25rem; }
 
-#login .sub-tit { padding-top: 6.25rem; }
+#login .sub-tit { padding-top: 4.25rem; }
 
 /* =================== 잡동사니 =================== */
 .mt10.flex a { display: inline-block; font-size: 1.0625rem; color: #333333; font-weight: 400; }
 
 .member { max-width: 63.75rem; margin: 0 auto; }
 
-.member > .flex > li { width: 100%; padding: 1.25rem; -webkit-box-sizing: border-box; box-sizing: border-box; display: inline-block; text-align: center; }
+.member > .flex > li { width: 100%; padding: 1.25rem; -webkit-box-sizing: border-box; box-sizing: border-box; padding-top: 2.5rem; display: inline-block; text-align: center; }
 
 .member > .flex > li .img { margin-bottom: 1.5625rem; }
 
@@ -627,9 +627,9 @@ html.ie .scroll-custom { scrollbar-arrow-color: color(main); scrollbar-face-colo
 .btn.btn-disabled { opacity: 0.6; cursor: default; }
 
 /* =================== COM-TAB =================== */
-.tab-box { opacity: 0; height: 0; -webkit-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; }
+.tab-box { display: none; -webkit-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; }
 
-.tab-box.on { opacity: 1; height: auto; }
+.tab-box.on { display: block; }
 
 /* =================== LIST-TABLE2 =================== */
 .list-table2 { border-top: 0.125rem solid #363636; }
