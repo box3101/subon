@@ -1,6 +1,6 @@
 /* =================== footer =================== */
 .footer{
-  background: #333530;
+  background: #d4dbcd;
   &__top{
     display: flex; justify-content: space-between; 
     height: 5.9375rem; display: flex; align-items: center;
@@ -15,9 +15,9 @@
       li{
         a{
           display: inline-block;
-          font-size: 1.125rem; color: #f7fbf1; font-weight: 300; opacity: 0.5;
+          font-size: 1.125rem; color: #353635; 
           &:hover{
-            color: #fff; opacity: 0.8; font-weight: 400;
+            color: #3c7d38; font-weight: 600;
           }
         }
         + li {
@@ -29,7 +29,7 @@
   &__mid{
     padding: 1.875rem 0;
     address{
-      font-size: 25rem; opacity: 0.7; font-size: 1rem; color: #959595;
+      font-size: 25rem; font-size: 1rem; color: #353635;
       text-align: right;
     }
   }
@@ -37,7 +37,7 @@
   &-bot{
       background: #22251e;
       height: 3.4375rem; text-align: center; line-height: 3.4375rem;
-      font-size: 1.125rem; color: #5e5e5e; font-weight: 400;
+      font-size: 1.125rem; color: #a9aba7; 
   }
 }
 

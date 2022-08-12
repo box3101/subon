@@ -452,22 +452,25 @@ fieldset{
   clear: both;
   text-align: center;
   vertical-align: middle;
-  margin-bottom: 1.975em;
+  margin-bottom: 1.975rem;
   z-index: 0;
+  margin-top: 1.875rem !important;
+  margin-bottom: 0;
 }
+
 .paging span {
   vertical-align: middle;
   display: inline-block;
-  width: 2em;
-  height: 2em;
-  line-height: 1.975em;
+  width: 3rem;
+  // height: 0.9375rem;
+  line-height: 1.975rem;
   text-align: center;
-  margin-left: -0.0625em;
-  border: 0.0625em solid #ddd;
+  margin-left: -1px;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
+
 .paging span img {
   vertical-align: middle;
   max-width: 100%;
@@ -476,32 +479,36 @@ fieldset{
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
+
 .paging span a {
   vertical-align: middle;
   display: block;
-  // width: 1.975em;
+  // width: 1.975rem;
   height: auto;
   color: #424242;
-  font-size: 0.75em;
+  font-size: 1rem;
   font-family: "Noto Sans KR";
   display: flex;
-  align-items: center;
+  a: center;
   justify-content: center;
   height: 100%;
 }
+
 .paging span.on {
   vertical-align: middle;
-  border-bottom: 0.125em solid #0055a2;
-  color: #424242;
+  color: #1965B0;
   font-family: "Noto Sans KR";
 }
+
 .paging span.on a {
   font-family: "Noto Sans KR";
+  color: #1965B0;
+  font-weight: 500;
 }
+
 .paging span:first-child {
   margin-left: 0;
 }
-
 
 @media (max-width:$b-web){
   .list-table th, .list-table td{
