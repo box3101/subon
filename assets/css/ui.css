@@ -725,6 +725,22 @@ caption > div, legend, .hide {
     background: url(../img/banner-type6.png);
     background-size: cover;
     background-position: center; }
+  .sub-banner.type7 {
+    background: url(../img/banner-type7.png);
+    background-size: cover;
+    background-position: center; }
+  .sub-banner.type8 {
+    background: url(../img/banner-type8.png);
+    background-size: cover;
+    background-position: center; }
+  .sub-banner.type9 {
+    background: url(../img/banner-type9.png);
+    background-size: cover;
+    background-position: center; }
+  .sub-banner.type10 {
+    background: url(../img/banner-type10.png);
+    background-size: cover;
+    background-position: center; }
   .sub-banner .inner {
     height: 100%;
     display: flex;
@@ -746,6 +762,17 @@ caption > div, legend, .hide {
     color: #578f3b;
     font-weight: 500;
     display: none; }
+
+.com-agree-wrap {
+  background: #F5F5F5;
+  border: 1px solid #EEEEEE;
+  padding: 1.5rem 1.8rem; }
+  .com-agree-wrap .top {
+    border-bottom: 0.125rem solid #333; }
+  .com-agree-wrap .info {
+    margin-top: 0.3rem;
+    font-size: 1.2rem;
+    word-break: keep-all; }
 
 /* =================== location =================== */
 .location {
@@ -835,6 +862,14 @@ caption > div, legend, .hide {
     background: #f6f9f0; }
   .section2__had {
     margin-bottom: 1.25rem; }
+    .section2__had .tag {
+      display: inline-block;
+      padding: 0.3125rem 0.625rem;
+      border-radius: 1.25rem;
+      background: #199e48;
+      color: #fff !important;
+      font-size: 1.125rem;
+      font-weight: bold; }
     .section2__had .more-btn {
       font-size: 1.2rem;
       font-weight: 500; }
@@ -1071,6 +1106,8 @@ caption > div, legend, .hide {
     height: 6.25rem; }
   .comtype03 ul li .ref {
     margin-left: 2.5rem; }
+    .comtype03 ul li .ref p {
+      font-size: 1.25rem; }
     .comtype03 ul li .ref dl {
       display: flex;
       align-items: center;
@@ -1098,6 +1135,10 @@ caption > div, legend, .hide {
       .comtype03 ul li .ref.w100 .btn {
         background: #6fb214; }
 
+.comtype04 ul.shading li {
+  opacity: 0.6; }
+  .comtype04 ul.shading li.op1 {
+    opacity: 1; }
 .comtype04 li a {
   display: block; }
   .comtype04 li a .img img {
@@ -1107,6 +1148,7 @@ caption > div, legend, .hide {
     background: #fff;
     padding-top: 0.75rem;
     padding-left: 1.125rem;
+    padding-right: 1.125rem;
     padding-bottom: 1.875rem; }
     .comtype04 li a .txt-wrap .tag {
       display: inline-block;
@@ -1173,6 +1215,33 @@ caption > div, legend, .hide {
   padding-bottom: 7.25rem; }
   #login .sub-tit {
     padding-top: 4.25rem; }
+
+.inq-info .column .row {
+  padding: 3.125rem;
+  background: #eee;
+  text-align: center; }
+  .inq-info .column .row .btn {
+    display: inline-block;
+    width: 36.875rem;
+    margin: 0 auto;
+    margin-top: 3.625rem; }
+    @media all and (max-width: 600px) {
+      .inq-info .column .row .btn {
+        width: 100%; } }
+  .inq-info .column .row dl {
+    display: flex; }
+    .inq-info .column .row dl dt {
+      flex: 0 0 15%;
+      font-size: 1.1875rem;
+      margin-top: 0.4375rem; }
+    .inq-info .column .row dl dd {
+      flex: 1; }
+      .inq-info .column .row dl dd textarea {
+        height: 16.9375rem;
+        width: 100%;
+        padding: 1.25rem;
+        box-sizing: border-box;
+        border: 0.0625rem solid #c5c5c5; }
 
 /* =================== 잡동사니 =================== */
 .mt10.flex a {
@@ -1273,7 +1342,8 @@ caption > div, legend, .hide {
         height: 8.875rem; }
 
 .cd-popup {
-  opacity: 1; }
+  opacity: 1;
+  z-index: 10; }
   @media all and (max-width: 37.5rem) {
     .cd-popup .cd-popup-container {
       width: 90%; } }
@@ -1558,8 +1628,7 @@ caption > div, legend, .hide {
 /* =================== STAR-RATING =================== */
 fieldset {
   display: inline-block;
-  border: 0;
-  display: none; }
+  border: 0; }
 
 .star-rating input[type="radio"] {
   display: none; }
@@ -1602,6 +1671,12 @@ fieldset {
         padding: 0 !important; } }
   .form-group button {
     height: 2.5rem; }
+    .form-group button.fl-r {
+      flex: 0 0 25%;
+      height: 3.25rem; }
+      @media all and (max-width: 1200px) {
+        .form-group button.fl-r {
+          flex: 0 0 100%; } }
     @media (max-width: 600px) {
       .form-group button {
         min-width: 70px; } }
@@ -1610,7 +1685,7 @@ fieldset {
     .form-group__row dl {
       display: flex; }
       .form-group__row dl dt {
-        flex-basis: 5.25rem;
+        flex-basis: 7.25rem;
         flex-shrink: 0;
         display: flex;
         align-items: center;
@@ -1675,6 +1750,12 @@ fieldset {
 .form-wrap {
   display: flex;
   flex-wrap: wrap; }
+  .form-wrap .chk-info {
+    padding: 1.25rem;
+    font-size: 1rem;
+    color: #333;
+    border: 1px solid #C5C5C5;
+    background: #F0F0F0; }
 
 .form-txt-wrap {
   padding: 25px 20px;
@@ -2579,8 +2660,7 @@ a[data-fancybox="gallery"] {
   margin-right: -10px; }
 
 .gap15 {
-  gap: 15px;
-  margin-right: -15px; }
+  gap: 15px; }
 
 .gap20 {
   gap: 20px;
@@ -2835,7 +2915,7 @@ nav {
   -webkit-text-fill-color: transparent; }
 
 /* =================== 그림자 생성 =================== */
-.clinic-service .inner .ref ul li, .comtype01 li, .comtype05 li, .member > .flex > li {
+.clinic-service .inner .ref ul li, .comtype01 li, .comtype04 li a, .comtype05 li, .member > .flex > li {
   box-shadow: 4px 6px 13.86px 0.14px rgba(16, 28, 8, 0.1);
   text-shadow: 4px 6px 13.86px rgba(16, 28, 8, 0.1); }
 

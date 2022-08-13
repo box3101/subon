@@ -7,7 +7,7 @@
   }
   
   //banner
-  $banner-types : (type1, type2 , type3, type4, type5, type6);
+  $banner-types : (type1, type2 , type3, type4, type5, type6 , type7 ,type8 ,type9 , type10);
   @each $banner-type in $banner-types{
     &.#{$banner-type}{
       background: url(../img/banner-#{$banner-type}.png);
@@ -16,6 +16,7 @@
     }
   }
 
+  
   .inner{
     height: 100%;
     display: flex; align-items: center;
@@ -38,6 +39,23 @@
   }
   &__txt{
     font-size: 0.875rem; color: #578f3b; font-weight: 500; display: none;
+  }
+}
+
+
+.com-agree-wrap {
+  background: #F5F5F5;
+  border: 1px solid #EEEEEE;
+  padding: 1.5rem 1.8rem;
+
+  .top {
+    border-bottom: 0.125rem solid #333;
+  }
+
+  .info {
+    margin-top: 0.3rem;
+    font-size: 1.2rem;
+    word-break: keep-all;
   }
 }
 
@@ -128,6 +146,15 @@
   padding: 3.125rem 0;
   &__had{
     margin-bottom: 1.25rem;
+    .tag{
+      display: inline-block;
+    padding: 0.3125rem 0.625rem;
+    border-radius: 1.25rem;
+    background: #199e48;
+    color: #fff!important;
+    font-size: 1.125rem;
+    font-weight: bold;
+    } 
     .more-btn{
       font-size: 1.2rem; font-weight: 500;
     }
@@ -351,6 +378,7 @@
       flex:0 1 calc(50% - 0.9375rem);
       display: flex; box-sizing: border-box; border: 1px solid #eaeaea; border-radius: 0.625rem;
 
+
       @include make-before{
         position: absolute; left: 0; width: 0.3125rem; height: 100%; top: 0; bottom: 0;
         background: #a5c644; border-radius: 0.625rem 0 0 0.625rem;
@@ -363,6 +391,9 @@
       }
       .ref{
         margin-left: 2.5rem;
+        p{
+          font-size: 1.25rem; 
+        }
         dl{
           display: flex; align-items: center;
           margin-bottom: 0.3125rem;
@@ -388,11 +419,19 @@
   }
 }
 .comtype04{
+  ul.shading{
+    li{
+      opacity: 0.6;
+      &.op1{
+        opacity: 1;
+      }
+    }
+  }
   li{
     a{
       display: block;
       @extend %effect-1;
-
+      @extend %box-shadow;
       &:hover{
         @extend %hover-effect-1;
       }
@@ -403,7 +442,7 @@
         }
       }
       .txt-wrap{
-        background: #fff; padding-top: 0.75rem; padding-left: 1.125rem; padding-bottom: 1.875rem;
+        background: #fff; padding-top: 0.75rem; padding-left: 1.125rem;  padding-right: 1.125rem; padding-bottom: 1.875rem;
         .tag{display: inline-block;
           padding: 0.3125rem 0.625rem; border-radius: 1.25rem; background: #199e48;
           color: #fff; font-size: 1.125rem; font-weight: bold;
@@ -472,6 +511,39 @@
   }
 }
 
+.inq-info{
+  .column{
+    .row{
+      padding: 3.125rem; background: #eee;
+      text-align: center;
+      .btn{
+        display: inline-block;
+        width: 36.875rem; margin: 0 auto;
+        margin-top: 3.625rem;
+
+        @include media(600px){
+          width: 100%;
+        }
+      }
+      dl{
+        display: flex;
+        dt{
+          flex: 0 0 15%;
+          font-size: 1.1875rem;
+          margin-top: 0.4375rem;
+        }
+        dd{
+          flex:1;
+          textarea{
+            height: 16.9375rem;
+            width: 100%;padding: 1.25rem; box-sizing: border-box;    border: 0.0625rem solid #c5c5c5;
+          }
+
+        }
+      }
+    }
+  }
+}
 
 /* =================== 잡동사니 =================== */
 .mt10.flex a{
@@ -584,6 +656,7 @@
 
 .cd-popup{
   opacity: 1;
+  z-index: 10;
   .cd-popup-container{
     @include media(37.5rem){
       width: 90%;

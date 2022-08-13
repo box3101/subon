@@ -20,7 +20,7 @@
 
 /* =================== STAR-RATING =================== */
 fieldset{
-  display: inline-block; border:0; display: none;
+  display: inline-block; border:0;
 }
 .star-rating{
   input[type="radio"]{
@@ -77,6 +77,15 @@ fieldset{
   button{
     height: 2.5rem;
 
+    &.fl-r{
+      flex:0 0 25%;
+      height: 3.25rem;
+      
+      @include media(1200px){
+        flex:0 0 100%;
+      }
+    }
+
     @media (max-width:$b-mo){
       min-width: 70px;
     }
@@ -88,7 +97,7 @@ fieldset{
     dl {
       display: flex;
       dt {
-        flex-basis: 5.25rem;
+        flex-basis: 7.25rem;
         flex-shrink: 0;
         display: flex;
         align-items: center;
@@ -175,6 +184,11 @@ fieldset{
 .form-wrap {
   display: flex;
   flex-wrap: wrap;
+  .chk-info{
+    padding: 1.25rem; font-size: 1rem; color: #333; 
+    border: 1px solid #C5C5C5;
+    background: #F0F0F0;
+  }
 }
 
 .form-txt-wrap{
