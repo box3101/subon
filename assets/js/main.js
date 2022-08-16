@@ -19,6 +19,7 @@ $(function () {
     subPanel();
     cdPopup();
     comTab();
+    faq();
   }
 
 
@@ -184,11 +185,12 @@ $(function () {
     });
   }
 
-  function comTab(){
+  //com-tab
+  function comTab() {
     const tabLi = $(".com-tab li");
     const tabBox = $(".tab-box");
 
-    tabLi.on("click",function(e){
+    tabLi.on("click", function (e) {
       e.preventDefault();
 
       const target = $(this).find('a').attr("href");
@@ -202,6 +204,47 @@ $(function () {
       $(target).addClass("on");
 
     });
+  }
+
+  //faq
+  function faq() {
+    /* faq 220726 */
+    var faqDl = $(".faq-section");
+    var faqDt = $(".faq-section dt");
+    var faqDd = $(".faq-section dd");
+
+    // 첫번째 활성화
+    // faqDl.eq(0).children("dd").slideDown(500);
+    // faqDl.eq(0).addClass("is-active");
+
+    // 활성화 되었을때 클릭
+    function dlCheck($this) {
+      $this.parent("dl").removeClass("is-active");
+      $this.siblings("dd").slideUp(500);
+    }
+
+    // 활성화 안되었을때 클릭
+    function dlCheckOff($this) {
+      faqDl.children("dd").slideUp(500);
+      faqDl.removeClass("is-active");
+      $this.siblings("dd").slideDown(500);
+      $this.parent("dl").addClass("is-active");
+    }
+
+    faqDt.on("click", function () {
+
+      var $this = $(this);
+      var checkOn = $this.parent("dl").hasClass("is-active");
+
+
+      if (checkOn) {
+        dlCheck($this);
+      } else {
+        dlCheckOff($this);
+      }
+
+    });
+    /*// faq 220726  */
   }
 
 

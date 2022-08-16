@@ -635,13 +635,13 @@
               }
             }
             .tit{
-              width: 56.25rem;
+              width: 100%;
     font-size: 1.5rem;
     color: #333;
 
-              @include media(600px){
-                width: 50vw;
-              }
+              // @include media(600px){
+              //   width: 50vw;
+              // }
             }
           }
           .ref{
