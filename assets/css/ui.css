@@ -5031,3 +5031,74 @@ nav {
   animation-name: rollOut; }
 
 /*# sourceMappingURL=ui.css.map */
+
+
+/* 20220906 추가 css */
+.news ul li .row .lef .tit{max-width: 51.625rem;}
+.product-list{}
+.product-list ul{border-top: 0.0625rem solid #eee;}
+.product-list ul li{    border-bottom: 0.0625rem solid #eee;
+  padding: 1.25rem 0;}
+.product-list ul li .box-info{position: relative;}
+.product-list ul li .box-info .lef{margin-right: 5rem;}
+.product-list ul li .box-info .lef img{width: 15.9375rem;}
+.product-list ul li .box-info .ref{flex:1;}
+.product-list ul li .box-info .ref .had{    margin-top: 1.8125rem;}
+.product-list ul li .box-info .ref .had .flex>div .tit{font-size: 1.875rem;font-weight: bold;}
+.product-list ul li .box-info .ref .had .flex>div .tit span{
+  font-size: 1rem;
+  color: #666666;
+  font-weight: 500;
+  margin-left: 1.0875rem;
+}
+.product-list ul li .box-info .ref .had .flex>div .sub-tit{padding-top: 0;
+  text-align: left;
+  font-size: 1.25rem;
+  color: #333;
+  font-weight: 500;
+  margin-top: 0.6875rem;}
+.product-list ul li .box-info .ref .had .flex>div .price{
+  font-size: 1.9375rem;
+  color: #33a41c;
+  font-weight: bold;
+  /* margin-top: 2.0625rem; */
+  margin-right: 3.25rem;
+}
+.product-list ul li .box-info .ref .desc{
+  margin-top: 1.875rem;
+}
+.product-list ul li .box-info .ref .desc .tit{
+  color: #328f39;
+    font-weight: 500;
+}
+.product-list ul li .box-info .ref .desc .txt{
+  margin-top: 0.4375rem;
+  font-size: 1.125rem; font-weight: 500;
+}
+.product-list ul li .box-info .ref .desc a{
+  position: absolute;
+  right: 0;
+  bottom: 3.275rem;
+  top: auto;
+}
+
+@media (max-width:900px){
+  .product-list ul li .box-info{
+    flex-direction: column;
+  }
+  .product-list ul li .box-info .lef{text-align: center;}
+}
+
+@media (max-width:600px){
+  .product-list ul li .box-info .lef img{
+    width: 100%;
+  }
+  .product-list ul li .box-info .lef{margin-right: 0;}
+  .product-list ul li .box-info.flex{
+    flex-wrap:nowrap;
+  }
+  .product-list ul li .box-info .ref .desc a{bottom:4.875rem;}
+  .product-list ul li .box-info .ref .had .flex>div .it span{margin-left: 5px;}
+  .product-list ul li .box-info .ref .desc .txt{min-height: 40px;}
+  .product-list ul li .box-info .ref .had .flex.al-center{align-items: flex-start; margin-top: px;}
+}
