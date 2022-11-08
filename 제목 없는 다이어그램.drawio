@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-11-08T00:34:29.048Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="m5l7Tu0VVnai47-D17mt" version="20.5.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-11-08T00:35:59.734Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="lSOL_HWJUhEt0E04Clvt" version="20.5.3" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1185" dy="635" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="300000" pageHeight="300000" background="#F4F1DE" math="0" shadow="0">
       <root>
@@ -108,8 +108,32 @@
         <mxCell id="Gtpd2-pzpZS1eoP8T10H-136" value="예" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#393C56;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="530" y="210" width="40" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="Gtpd2-pzpZS1eoP8T10H-141" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#E07A5F;fontColor=#393C56;fillColor=#F2CC8F;entryX=1.028;entryY=0.583;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Gtpd2-pzpZS1eoP8T10H-139" target="Gtpd2-pzpZS1eoP8T10H-125">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="620" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Gtpd2-pzpZS1eoP8T10H-145" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#E07A5F;fontColor=#393C56;fillColor=#F2CC8F;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Gtpd2-pzpZS1eoP8T10H-139" target="Gtpd2-pzpZS1eoP8T10H-144">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="825" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="Gtpd2-pzpZS1eoP8T10H-139" value="입력한 단어가 올바른가?" style="rhombus;whiteSpace=wrap;html=1;rounded=1;strokeColor=#E07A5F;fontColor=#393C56;fillColor=#F2CC8F;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="740" y="280" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Gtpd2-pzpZS1eoP8T10H-140" value="" style="shape=waypoint;sketch=0;size=6;pointerEvents=1;points=[];fillColor=#F2CC8F;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;strokeColor=#E07A5F;fontColor=#393C56;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="555" y="300" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Gtpd2-pzpZS1eoP8T10H-142" value="예" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#393C56;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="660" y="295" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Gtpd2-pzpZS1eoP8T10H-144" value="틀련다고 표시한다" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="690" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Gtpd2-pzpZS1eoP8T10H-146" value="아니오" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#393C56;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="820" y="380" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
